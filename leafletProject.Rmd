@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+author: "Ann Cannon"
+date: "3/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+      addTiles() %>%
+      addMarkers(lat=41.925590, lng = -91.421900, 
+                 popup = "Cornell College") %>%
+      addMarkers(lat=41.753880, lng= -92.723720,
+                 popup = "Grinnell College") %>%
+      addMarkers(lat = 40.486830, lng=-78.026160,
+                 popup="Juniata college")
+my_map
+
+```
