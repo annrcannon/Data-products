@@ -1,12 +1,12 @@
 ---
-title: "Untitled"
+title: "My map project"
 author: "Ann Cannon"
 date: "3/29/2021"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
 ```
 
 ```{r}
