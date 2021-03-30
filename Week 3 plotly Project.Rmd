@@ -1,0 +1,27 @@
+---
+title: "Week 3 Project"
+author: "Ann Cannon"
+date: "3/30/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, comment = FALSE, message = FALSE )
+```
+```{r}
+library(Stat2Data)
+library(plotly)
+```
+## R Markdown
+
+How are age and height related for elephants and does the sex of the elephant matter?  Let's see what the data tell us.
+
+
+
+## Scatterplot of height and age for a sample of elephants
+
+```{r}
+data("ElephantsMF")
+plot_ly(data=ElephantsMF, x= ~Age, y= ~Height, mode="markers", color= ~Sex, colors=c("Red", "Blue"))
+```
+
